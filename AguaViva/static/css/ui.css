@@ -1412,4 +1412,16 @@ a[class*=card]:hover .title {
   display: block;
 }
 
+.carousel-control-next{
+  margin-top: 220px;
+  margin-right: 25px;
+  width: 150px;
+  height: 150px;
+}
+.carousel-control-prev{
+  margin-top: 220px;
+  margin-left: 25px;
+  width: 150px;
+  height: 150px;
+}
 /*# sourceMappingURL=ui.css.map */

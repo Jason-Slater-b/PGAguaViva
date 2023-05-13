@@ -1411,5 +1411,8 @@ a[class*=card]:hover .title {
   margin-right: 5px;
   display: block;
 }
-
+.carousel-control-next{
+  width: 10px;
+  height: 10px;
+}
 /*# sourceMappingURL=ui.css.map */

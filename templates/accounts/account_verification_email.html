@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hola {{ user.first_name }},
+
+Necesitas activar tu cuenta, da click al siguiente link:
+
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+Te saluda Agua Viva. 
+
+{% endautoescape %}
