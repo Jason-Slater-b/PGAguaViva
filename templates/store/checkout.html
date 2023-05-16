@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title mb-4">Dirección de la facturación </h4>
-                        <form action="" method="post">
+                        <form action="{% url 'place_order' %}" method="post">
                             {% csrf_token %}
                             <div class="form-row">
                                 <div class="col form-group">
@@ -40,17 +40,17 @@
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label for="">Dirección</label>
-                                    <input type="email" name="address_line_1" class="form-control">
+                                    <input type="text" name="addres_line_1" class="form-control">
                                 </div>
                                 <div class="col form-group">
                                     <label for="">Detalles Direccion</label>
-                                    <input type="text" name="address_line_2" class="form-control">
+                                    <input type="text" name="addres_line_2" class="form-control">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col form-group">
                                     <label for="">Ciudad</label>
-                                    <input type="email" name="city" class="form-control">
+                                    <input type="text" name="city" class="form-control">
                                 </div>
                                 <div class="col form-group">
                                     <label for="">Departamento</label>
@@ -109,8 +109,8 @@
                                     </td>
                                     <td>
                                         <div class="price-wrap">
-                                            <var class="price">$ {{ cart_item.sub_total }} </var>
-                                            <small class="text-muted"> $ {{cart_item.product.price}} cada uno </small>
+                                            <var class="price">Q. {{ cart_item.sub_total }} </var>
+                                            <small class="text-muted"> Q. {{cart_item.product.price}} cada uno </small>
                                         </div> <!-- price-wrap .// -->
                                     </td>
 

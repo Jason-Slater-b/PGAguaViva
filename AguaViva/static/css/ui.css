@@ -11,6 +11,9 @@ html {
 INCLUDE STYLES AND COMPONENTS
 ===================== */
 /* ================== HELPERS  =================== */
+
+
+
 a:hover {
   text-decoration: none;
 }
@@ -1425,3 +1428,7 @@ a[class*=card]:hover .title {
   height: 150px;
 }
 /*# sourceMappingURL=ui.css.map */
+
+.section-header{
+  background: url("../images/banners/aqua.png") no-repeat center center / cover;
+ }  
